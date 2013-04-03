@@ -13,6 +13,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "shuttle": "~0.6.0"
+    "shuttle": "~0.6.0",
+    "mi": "~1.0.0",
+    "debug": "~0.7.2"
+  },
+  "optionalDependencies": {
+    "localrc": "~0.1.1",
+    "rc": "0.0.8"
   }
 }

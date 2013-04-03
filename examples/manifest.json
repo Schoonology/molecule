@@ -1,0 +1,11 @@
+{
+  "external": {
+    "log": ["ipc:///tmp/spaceage-log"]
+  },
+  "levels": [{
+    "src": "./level"
+  }, {
+    "src": "core.log",
+    "url": "ipc:///tmp/spaceage-log"
+  }]
+}

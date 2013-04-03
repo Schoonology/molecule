@@ -1,5 +1,15 @@
 # Spaceage
 
+## Design Philosophy
+
+ * Flexibility First, Fallbacks Second - Everything about Spaceage is driven by its configuration. Where I thought it
+ sensical, I've provided fallback values, even as far as the configuration itself is concerned, using
+ [rc](https://npmjs.org/package/rc) and [localrc](https://npmjs.org/package/localrc) to load as much of an obvious
+ configuration as possible. That said, nothing is done for you that cannot be replaced obviously and with the right
+ configuration.
+ * Barefoot Programming - Even a concept as core to making Spaceage useful as the ControlDeck uses all the same methods
+ that Spaceage users are expected to use. Some people call it "eating your own dogfood".
+
 ## License
 
 Copyright (C) 2013 Michael Schoonmaker (michael.r.schoonmaker@gmail.com)
