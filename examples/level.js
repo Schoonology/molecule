@@ -19,10 +19,9 @@ function ExampleLevel(obj) {
 
   Level.call(this, obj)
 
-  this.logLevel = obj.level || 'info'
+  this.namespace = 'example'
 }
 Level.inherit(ExampleLevel)
-ExampleLevel.namespace = 'example'
 
 //
 // ## prepare `prepare()`
@@ -33,8 +32,7 @@ ExampleLevel.prototype.prepare = prepare
 function prepare() {
   var self = this
 
-  self.logger = self.require('log').expect(self.logLevel)
-  self.log = self.logger[self.logLevel]
+  self.logger = self.require('core.log').expect('info')
 
   return Level.prototype.prepare.call(this)
 }
@@ -48,7 +46,7 @@ ExampleLevel.prototype.start = start
 function start() {
   var self = this
 
-  self.log('Started and properly-connected.', console.error)
+  self.logger.info('Started and properly-connected.', console.error)
 
   return self
 }

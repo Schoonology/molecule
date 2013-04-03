@@ -28,6 +28,3 @@ station = spaceage
 //   .expect('test')
 
 // 1. Destroy the Station you once loved.
-setTimeout(function () {
-  station.destroy()
-}, 1000)
