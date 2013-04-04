@@ -1,16 +1,18 @@
 {
   "external": {
-    "core.control": [
-      "ipc:///tmp/spaceage-control-one",
-      "ipc:///tmp/spaceage-control-two"
-    ]
   },
   "levels": {
     "core.control": {
       "remotes": [
         "ipc:///tmp/spaceage-control-one-pub",
         "ipc:///tmp/spaceage-control-two-pub"
-      ]
+      ],
+      "seed": {
+        "core.control": [
+          "ipc:///tmp/spaceage-control-one",
+          "ipc:///tmp/spaceage-control-two"
+        ]
+      }
     },
     "./level": {}
   }
