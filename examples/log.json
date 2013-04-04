@@ -12,6 +12,8 @@
         "ipc:///tmp/spaceage-control-two-pub"
       ]
     },
-    "./level": {}
+    "core.log": {
+      "url": "ipc:///tmp/spaceage-log"
+    }
   }
 }

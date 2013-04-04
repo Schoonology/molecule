@@ -1,0 +1,12 @@
+{
+  "external": {
+    "core.control": ["ipc:///tmp/spaceage-control-one"]
+  },
+  "levels": {
+    "core.control": {
+      "url": "ipc:///tmp/spaceage-control-two",
+      "public": "ipc:///tmp/spaceage-control-two-pub",
+      "remotes": ["ipc:///tmp/spaceage-control-one-pub"]
+    }
+  }
+}

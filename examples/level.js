@@ -18,10 +18,8 @@ function ExampleLevel(obj) {
   obj = obj || {}
 
   Level.call(this, obj)
-
-  this.namespace = 'example'
 }
-Level.inherit(ExampleLevel)
+Level.inherit(ExampleLevel, 'example')
 
 //
 // ## prepare `prepare()`
@@ -46,7 +44,9 @@ ExampleLevel.prototype.start = start
 function start() {
   var self = this
 
-  self.logger.info('Started and properly-connected.', console.error)
+  setInterval(function () {
+    self.logger.info('Started and properly-connected.', console.error)
+  }, 1000)
 
   return self
 }
