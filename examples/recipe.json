@@ -1,19 +1,19 @@
 {
   "external": {
-    "core.control": [
-      "ipc:///tmp/molecule-control-one",
-      "ipc:///tmp/molecule-control-two"
-    ]
   },
   "atoms": {
     "core.control": {
       "remotes": [
         "ipc:///tmp/molecule-control-one-pub",
         "ipc:///tmp/molecule-control-two-pub"
-      ]
+      ],
+      "seed": {
+        "core.control": [
+          "ipc:///tmp/molecule-control-one",
+          "ipc:///tmp/molecule-control-two"
+        ]
+      }
     },
-    "core.log": {
-      "url": "ipc:///tmp/molecule-log"
-    }
+    "./atom": {}
   }
 }

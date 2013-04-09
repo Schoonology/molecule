@@ -1,14 +1,20 @@
-# Spaceage
+# Molecule
+
+Molecule is a tiny framework for composing systems (called "Atoms") into process groups (configured as "Recipes" and run as "Molecules") that comunicate with each other by passing messages ("Electrons") from system to system through a specific interface of handlers ("Nuclei") and emitters ("Electrons").
+
+## Readiness
+
+Molecule is still in early development. Even this documentation is fresh, and needs to be iterated over.
 
 ## Design Philosophy
 
- * Flexibility First, Fallbacks Second - Everything about Spaceage is driven by its configuration. Where I thought it
+ * Flexibility First, Fallbacks Second - Everything about Molecule is driven by its configuration. Where I thought it
  sensical, I've provided fallback values, even as far as the configuration itself is concerned, using
  [rc](https://npmjs.org/package/rc) and [localrc](https://npmjs.org/package/localrc) to load as much of an obvious
  configuration as possible. That said, nothing is done for you that cannot be replaced obviously and with the right
  configuration.
- * Barefoot Programming - Even a concept as core to making Spaceage useful as the ControlDeck uses all the same methods
- that Spaceage users are expected to use. Some people call it "eating your own dogfood".
+ * Barefoot Programming - Even a concept as core to making Molecule useful as the Control Atom uses all the same methods
+ that Molecule users are expected to use. Some people call it "eating your own dogfood".
 
 ## License
 

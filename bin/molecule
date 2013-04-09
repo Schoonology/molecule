@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+var path = require('path')
+  , lib = require('../')
+  , recipeLoc = path.resolve(process.cwd(), process.argv[2])
+  , recipe
+  , molecule
+
+try {
+  recipe = require(recipeLoc)
+} catch (e) {
+  console.error('Failed to load recipe ' + recipeLoc + ' with:', e.message)
+}
+
+molecule = lib
+  .createMolecule()
+  .load(recipe)
+  .start()

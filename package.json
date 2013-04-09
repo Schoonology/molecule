@@ -1,7 +1,7 @@
 {
-  "name": "spaceage",
+  "name": "molecule",
   "version": "0.1.0",
-  "description": "ERROR: No README.md file found!",
+  "description": "A tiny framework for composing atoms of logic and transfering messages betwixt.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -20,5 +20,8 @@
   "optionalDependencies": {
     "localrc": "~0.1.1",
     "rc": "0.0.8"
+  },
+  "bin": {
+    "molecule": "./bin/molecule"
   }
 }

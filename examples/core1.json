@@ -1,12 +1,12 @@
 {
   "external": {
-    "core.control": ["ipc:///tmp/spaceage-control-two"]
+    "core.control": ["ipc:///tmp/molecule-control-two"]
   },
-  "levels": {
+  "atoms": {
     "core.control": {
-      "url": "ipc:///tmp/spaceage-control-one",
-      "public": "ipc:///tmp/spaceage-control-one-pub",
-      "remotes": ["ipc:///tmp/spaceage-control-two-pub"]
+      "url": "ipc:///tmp/molecule-control-one",
+      "public": "ipc:///tmp/molecule-control-one-pub",
+      "remotes": ["ipc:///tmp/molecule-control-two-pub"]
     }
   }
 }
