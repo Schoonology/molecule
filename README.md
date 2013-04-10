@@ -1,6 +1,6 @@
 # Molecule
 
-Molecule is a tiny framework for composing systems (called "Atoms") into process groups (configured as "Recipes" and run as "Molecules") that comunicate with each other by passing messages ("Electrons") from system to system through a specific interface of handlers ("Nuclei") and emitters ("Electrons").
+Molecule is a tiny framework for composing systems (called "Atoms") into process groups (configured as "Recipes" and run as "Molecules") that comunicate with each other by passing messages from system to system through a specific interface of handlers ("Nuclei") and emitters ("Electrons").
 
 ## Readiness
 

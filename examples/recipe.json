@@ -1,19 +1,19 @@
 {
-  "external": {
-  },
-  "atoms": {
+  "atoms": ["core.control", "./atom"],
+  "types": {
     "core.control": {
-      "remotes": [
-        "ipc:///tmp/molecule-control-one-pub",
-        "ipc:///tmp/molecule-control-two-pub"
-      ],
+      "pubsub": {
+        "imports": [
+          "ipc:///tmp/molecule-control-one-pub",
+          "ipc:///tmp/molecule-control-two-pub"
+        ]
+      },
       "seed": {
         "core.control": [
           "ipc:///tmp/molecule-control-one",
           "ipc:///tmp/molecule-control-two"
         ]
       }
-    },
-    "./atom": {}
+    }
   }
 }

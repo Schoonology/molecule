@@ -15,7 +15,9 @@
   "dependencies": {
     "shuttle": "~0.6.0",
     "mi": "~1.0.0",
-    "debug": "~0.7.2"
+    "debug": "~0.7.2",
+    "traverse": "~0.6.3",
+    "minimatch": "~0.2.11"
   },
   "optionalDependencies": {
     "localrc": "~0.1.1",

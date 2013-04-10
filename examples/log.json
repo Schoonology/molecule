@@ -1,19 +1,22 @@
 {
-  "external": {
-    "core.control": [
-      "ipc:///tmp/molecule-control-one",
-      "ipc:///tmp/molecule-control-two"
-    ]
-  },
-  "atoms": {
+  "atoms": ["core.control", "core.log"],
+  "types": {
     "core.control": {
-      "remotes": [
-        "ipc:///tmp/molecule-control-one-pub",
-        "ipc:///tmp/molecule-control-two-pub"
-      ]
+      "imports": [
+        { "url": "ipc:///tmp/molecule-control-one" },
+        { "url": "ipc:///tmp/molecule-control-two" }
+      ],
+      "pubsub": {
+        "imports": [
+          { "url": "ipc:///tmp/molecule-control-one-pub" },
+          { "url": "ipc:///tmp/molecule-control-two-pub" }
+        ]
+      }
     },
     "core.log": {
-      "url": "ipc:///tmp/molecule-log"
+      "export": [{
+        "url": "ipc:///tmp/molecule-log"
+      }]
     }
   }
 }
