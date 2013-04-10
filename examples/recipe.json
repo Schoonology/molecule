@@ -1,5 +1,6 @@
 {
   "atoms": ["core.control", "./atom"],
+  "field": { "url": "inproc:///tmp/molecule-field-example" },
   "types": {
     "core.control": {
       "pubsub": {
