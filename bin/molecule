@@ -6,7 +6,7 @@ var path = require('path')
   , molecule
 
 try {
-  recipe = require(recipeLoc)
+  recipe = lib.loadRecipe(recipeLoc)
 } catch (e) {
   console.error('Failed to load recipe ' + recipeLoc + ' with:', e.message)
 }
