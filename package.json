@@ -1,6 +1,6 @@
 {
   "name": "molecule",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A tiny framework for composing atoms of logic and transfering messages betwixt.",
   "main": "index.js",
   "directories": {
